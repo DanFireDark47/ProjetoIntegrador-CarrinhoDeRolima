@@ -2,15 +2,18 @@
 #include <stdlib.h>
 #include "view/hudBaterias.c"
 #include "models/Baterias.c"
+#include "view/hudClassificacaoGeral.c"
+
 
 int Rodando = 1,EscolhaMenu;
 
 int main(){
+
     printf("Projeto Integrador - Kuvax TPDS \n");
     system("pause");
   
     while(Rodando == 1){      
-        EscolhaMenu = 0;
+        EscolhaMenu = NULL;
         printf("1 - Bateria 1\n");
         printf("2 - Bateria 2\n");
         printf("3 - Bateria 3\n");
@@ -30,7 +33,9 @@ int main(){
             hudBaterias(2);
             break;
         case 4:
-            printf("Classificação Geral:\n");
+            limpar_tela();
+            hudClassificacaoGeral();
+            
             printf("\n");
             break;
         case 5:
@@ -40,7 +45,7 @@ int main(){
         case 6:
             printf("\nvoce tem certeza que deseja sair do sistema?\n");
             printf("1 - Sim\n");
-            printf("2 - Não\n");
+            printf("2 - Nao\n");
             printf("digite a sua escolha: ");scanf("%d", &EscolhaMenu);
             if(EscolhaMenu	== 2){
               limpar_tela();
@@ -51,7 +56,7 @@ int main(){
             break;
         default:
             limpar_tela();
-            printf("\nOPÇÃO INVÁLIDA – DIGITE NOVAMENTE.\n");
+            printf("\nOPCAO INVALIDA – DIGITE NOVAMENTE.\n");
             printf("\n");
             break;
         }

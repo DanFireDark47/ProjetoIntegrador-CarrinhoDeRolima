@@ -14,9 +14,9 @@ void hudBaterias(int nBateria){
                     nTime + 1,
                     nTime + 1,
                     nBateriaTexto,
-                    Bateria[nBateria][nTime][2],
+                    Bateria[nBateria][nTime][0],
                     Bateria[nBateria][nTime][1],
-                    Bateria[nBateria][nTime][0]);
+                    Bateria[nBateria][nTime][2]);
                   }
                   printf("6 - Voltar ao menu principal\n");
                   printf("digite a sua escolha: ");scanf("%d", &EscolhaEquipe);
