@@ -3,7 +3,7 @@
 <h3>Time:</h3>
 <h4>Danilo Silva de Oliveira<br>
  Gabriel Rocha<br>
- Samuel Silva<br>
+ Samuel Araujo<br>
  Marcelo Polydoro</h4>
 
 ### Tela de Inicio
