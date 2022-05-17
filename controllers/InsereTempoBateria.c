@@ -11,10 +11,10 @@ void insereTempoBateria(int nBateria, int EscolhaEquipe){
                     printf("Tempo Equipe %d na Bateria %d: ",EscolhaEquipeTexto ,nBateriaTexto);
                     scanf("%d", &Bateria[nBateria][EscolhaEquipe][0]);
                     limpar_tela();
-                    printf("Tempo Equipe %d na Bateria %d: %d:",EscolhaEquipeTexto ,nBateriaTexto,Bateria[nBateria][EscolhaEquipe][2]);
+                    printf("Tempo Equipe %d na Bateria %d: %d:",EscolhaEquipeTexto ,nBateriaTexto,Bateria[nBateria][EscolhaEquipe][0]);
                     scanf("%d", &Bateria[nBateria][EscolhaEquipe][1]);
                     limpar_tela();
-                    printf("Tempo Equipe %d na Bateria %d: %d:%d:",EscolhaEquipeTexto,nBateriaTexto,Bateria[nBateria][EscolhaEquipe][2],Bateria[nBateria][EscolhaEquipe][1]);
+                    printf("Tempo Equipe %d na Bateria %d: %d:%d:",EscolhaEquipeTexto,nBateriaTexto,Bateria[nBateria][EscolhaEquipe][0],Bateria[nBateria][EscolhaEquipe][1]);
                     scanf("%d", &Bateria[nBateria][EscolhaEquipe][2]);
                     limpar_tela();
                   }else if(EscolhaEquipe == 6){
