@@ -9,7 +9,7 @@ int hudClassificacaoGeral(){
     int EscolhaMenu = 0;
     ClassificacaoGeral();
     while(EscolhaMenu != 1){
-        long int Minuto,Segundo,Milisegundo;
+        int Minuto,Segundo,Milisegundo;
         for(int n = 0;n < 5;n++){
             Minuto = BateriaAritmetica[n][0] / 60000;
             Segundo = (BateriaAritmetica[n][0] % 60000) / 1000;

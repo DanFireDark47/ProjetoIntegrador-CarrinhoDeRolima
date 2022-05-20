@@ -3,7 +3,7 @@
 #include "../models/LimparTela.c"
 #include "../models/Baterias.c"
 
-void insereTempoBateria(int nBateria, int EscolhaEquipe){
+int insereTempoBateria(int nBateria, int EscolhaEquipe){
   int nBateriaTexto = nBateria + 1;
   int EscolhaEquipeTexto = EscolhaEquipe + 1;
   if(EscolhaEquipe != 6 && EscolhaEquipe >= 0 && EscolhaEquipe <= 4){
