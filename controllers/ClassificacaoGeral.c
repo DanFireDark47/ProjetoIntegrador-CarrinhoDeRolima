@@ -9,16 +9,17 @@ int ClassificacaoGeral(){
     //Transforma o tempo da bateria em milisegundos
     for(sortTime = 0;sortTime < 5;sortTime++){
         for(sortBateria = 0;sortBateria < 3;sortBateria++){
-            CalculoTotal = Bateria[sortBateria][sortTime][0] * 6000;
-            CalculoTotal += Bateria[sortBateria][sortTime][1] * 1000;
-            CalculoTotal += Bateria[sortBateria][sortTime][2];
+             CalculoTotal = Bateria[sortBateria][sortTime][0] * 60000;
+             CalculoTotal += Bateria[sortBateria][sortTime][1] * 1000;
+             CalculoTotal += Bateria[sortBateria][sortTime][2];
             BateriaEmMs[sortTime][sortBateria] = CalculoTotal;
         }
     }
     //organiza a matriz ms e faz a média aritmética de cada time
-    int BateriaMeio,BateriaMenor,BateriaMaior;
+    long int BateriaMeio,BateriaMenor,BateriaMaior;
     BateriaMeio = 0;
     for(sortTime = 0;sortTime < 5;sortTime++){
+
         //define o maior valor da bateria
         if(BateriaEmMs[sortTime][0] > BateriaEmMs[sortTime][2] && BateriaEmMs[sortTime][0] > BateriaEmMs[sortTime][1]){
             BateriaMaior = BateriaEmMs[sortTime][0];
@@ -46,7 +47,7 @@ int ClassificacaoGeral(){
         }
 
         //adiciona a média aritmética
-        BateriaAritmetica[sortTime][0] = (BateriaMeio + BateriaMenor) / 2;
+        BateriaAritmetica[sortTime][0] = (BateriaMeio + BateriaMenor) / 3;
         BateriaAritmetica[sortTime][1] = sortTime;
     }
     //ordena a matriz de acordo com a média aritmética

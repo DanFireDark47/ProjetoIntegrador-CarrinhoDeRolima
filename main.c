@@ -3,17 +3,17 @@
 #include "view/hudBaterias.c"
 #include "models/Baterias.c"
 #include "view/hudClassificacaoGeral.c"
+#include "models/ExportarClassificacaoGeral.c"
 
 
 int Rodando = 1,EscolhaMenu;
 
 int main(){
-
     printf("Projeto Integrador - Kuvax TPDS \n");
     system("pause");
   
     while(Rodando == 1){      
-        EscolhaMenu = NULL;
+        EscolhaMenu = 0;
         printf("1 - Bateria 1\n");
         printf("2 - Bateria 2\n");
         printf("3 - Bateria 3\n");
@@ -39,7 +39,7 @@ int main(){
             printf("\n");
             break;
         case 5:
-            printf("Exportar Classificacao Geral\n");
+            ExportarClassificacaoGeral();
             printf("\n");
             break;
         case 6:
